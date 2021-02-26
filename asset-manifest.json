@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/wifi-hotspots/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/wifi-hotspots/static/js/main.271c38f4.chunk.js",
-    "main.js.map": "/wifi-hotspots/static/js/main.271c38f4.chunk.js.map",
-    "runtime-main.js": "/wifi-hotspots/static/js/runtime-main.9ec4be2f.js",
-    "runtime-main.js.map": "/wifi-hotspots/static/js/runtime-main.9ec4be2f.js.map",
-    "static/js/2.0564e00e.chunk.js": "/wifi-hotspots/static/js/2.0564e00e.chunk.js",
-    "static/js/2.0564e00e.chunk.js.map": "/wifi-hotspots/static/js/2.0564e00e.chunk.js.map",
-    "static/js/3.6531903b.chunk.js": "/wifi-hotspots/static/js/3.6531903b.chunk.js",
-    "static/js/3.6531903b.chunk.js.map": "/wifi-hotspots/static/js/3.6531903b.chunk.js.map",
-    "index.html": "/wifi-hotspots/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/wifi-hotspots/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.0564e00e.chunk.js.LICENSE.txt": "/wifi-hotspots/static/js/2.0564e00e.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/wifi-hotspots/static/media/logo.6ce24c58.svg"
+    "main.css": "/WifiHotspots/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/WifiHotspots/static/js/main.271c38f4.chunk.js",
+    "main.js.map": "/WifiHotspots/static/js/main.271c38f4.chunk.js.map",
+    "runtime-main.js": "/WifiHotspots/static/js/runtime-main.5ffc4e3b.js",
+    "runtime-main.js.map": "/WifiHotspots/static/js/runtime-main.5ffc4e3b.js.map",
+    "static/js/2.0564e00e.chunk.js": "/WifiHotspots/static/js/2.0564e00e.chunk.js",
+    "static/js/2.0564e00e.chunk.js.map": "/WifiHotspots/static/js/2.0564e00e.chunk.js.map",
+    "static/js/3.6531903b.chunk.js": "/WifiHotspots/static/js/3.6531903b.chunk.js",
+    "static/js/3.6531903b.chunk.js.map": "/WifiHotspots/static/js/3.6531903b.chunk.js.map",
+    "index.html": "/WifiHotspots/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/WifiHotspots/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.0564e00e.chunk.js.LICENSE.txt": "/WifiHotspots/static/js/2.0564e00e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/WifiHotspots/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9ec4be2f.js",
+    "static/js/runtime-main.5ffc4e3b.js",
     "static/js/2.0564e00e.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.271c38f4.chunk.js"
