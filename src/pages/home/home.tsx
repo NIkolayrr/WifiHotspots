@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react'
+import { Hero } from './hero'
 
 export function Home() {
   return (
     <div className='home-wrapper'>
-      <h1>Home component</h1>
+      <Hero />
     </div>
   )
 }

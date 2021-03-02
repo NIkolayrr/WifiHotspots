@@ -5,6 +5,7 @@ import { Home } from '../pages/home/home'
 const Links = () => {
   return (
     <nav className='navigation'>
+      <div className='logo'>WifiHotspots</div>
       <ul>
         <li>
           <Link to='/'>Home</Link>
@@ -13,7 +14,7 @@ const Links = () => {
           <Link to='/about'>About</Link>
         </li>
         <li>
-          <Link to='/users'>Users</Link>
+          <Link to='/location'>Add Location</Link>
         </li>
       </ul>
     </nav>
@@ -26,8 +27,8 @@ const Routes = () => {
       <Route path='/about'>
         <h1>About</h1>
       </Route>
-      <Route path='/users'>
-        <h1>Users</h1>
+      <Route path='/location'>
+        <h1>Add location</h1>
       </Route>
       <Route path='/'>
         <Home />

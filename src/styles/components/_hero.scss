@@ -1,0 +1,12 @@
+.hero {
+  background-color: $primary-color;
+  color: $accent;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin: 0;
+  }
+}

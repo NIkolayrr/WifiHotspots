@@ -1,0 +1,29 @@
+.navigation {
+  background-color: $secondary-color;
+  display: flex;
+  align-items: center;
+  .logo {
+    flex: 1;
+    color: $primary-color;
+    font-size: $heading;
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 0;
+    padding: 20px 0;
+    justify-content: flex-end;
+    li {
+      list-style-type: none;
+      margin: 0 20px;
+      a {
+        font-size: $paragraph;
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
