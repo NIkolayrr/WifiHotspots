@@ -9,7 +9,7 @@ export function Map() {
     },
     zoom: 11,
   }
-  const mapsKey = process.env.GOOGLE_API_KEY as string
+  const mapsKey = process.env.REACT_APP_GOOGLE_API_KEY as string
   return (
     <div>
       <div style={{ height: '100vh', width: '100%' }}>
