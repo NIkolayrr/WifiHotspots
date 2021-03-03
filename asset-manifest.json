@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/WifiHotspots/static/css/main.05c8ed29.chunk.css",
-    "main.js": "/WifiHotspots/static/js/main.3d78dbd5.chunk.js",
-    "main.js.map": "/WifiHotspots/static/js/main.3d78dbd5.chunk.js.map",
+    "main.js": "/WifiHotspots/static/js/main.4cefaaa3.chunk.js",
+    "main.js.map": "/WifiHotspots/static/js/main.4cefaaa3.chunk.js.map",
     "runtime-main.js": "/WifiHotspots/static/js/runtime-main.1ebc4461.js",
     "runtime-main.js.map": "/WifiHotspots/static/js/runtime-main.1ebc4461.js.map",
     "static/js/2.84d25f8d.chunk.js": "/WifiHotspots/static/js/2.84d25f8d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1ebc4461.js",
     "static/js/2.84d25f8d.chunk.js",
     "static/css/main.05c8ed29.chunk.css",
-    "static/js/main.3d78dbd5.chunk.js"
+    "static/js/main.4cefaaa3.chunk.js"
   ]
 }
