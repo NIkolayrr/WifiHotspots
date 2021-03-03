@@ -1,15 +1,16 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 import { Home } from '../pages/home/home'
+import { Map } from '../pages/map/map'
 
 const Links = () => {
   return (
     <nav className='navigation'>
-      <div className='logo'>WifiHotspots</div>
+      <div className='logo'>
+        {' '}
+        <Link to='/'>WifiHotspots</Link>
+      </div>
       <ul>
-        <li>
-          <Link to='/'>Home</Link>
-        </li>
         <li>
           <Link to='/about'>About</Link>
         </li>
@@ -29,6 +30,9 @@ const Routes = () => {
       </Route>
       <Route path='/location'>
         <h1>Add location</h1>
+      </Route>
+      <Route path='/map'>
+        <Map />
       </Route>
       <Route path='/'>
         <Home />
