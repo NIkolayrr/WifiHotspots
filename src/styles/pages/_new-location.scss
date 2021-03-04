@@ -1,0 +1,15 @@
+.new-location-page {
+  display: flex;
+  flex-direction: row;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin: 10px 0;
+      input {
+        margin-left: 10px;
+      }
+    }
+  }
+}
