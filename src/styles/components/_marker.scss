@@ -30,6 +30,10 @@
     -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
     box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
 
+    &.not-active {
+      background-color: $primary-color;
+    }
+
     &::after {
       content: '';
       width: 2.5em;

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import GoogleMapReact from 'google-map-react'
 import firebase from '../../core-data/firebase'
+import { Marker } from '../../components/marker'
 
 export function Map() {
   const [markers, setMarkers] = useState(null) as any
@@ -36,26 +37,13 @@ export function Map() {
                     lng={markers[el].marker.lon}
                     data={markers[el]}
                     id={el}
+                    isActive={true}
                   />
                 )
               })
             : null}
         </GoogleMapReact>
       </div>
-    </div>
-  )
-}
-
-const Marker = (props: any) => {
-  const [isHidden, setIsHidden] = useState(true)
-  return (
-    <div className='marker-container'>
-      <div className='info-container' hidden={isHidden}>
-        <h2>Name: {props.data.name} </h2>
-        <h2>Network: {props.data.network} </h2>
-        <h2>Password: {props.data.pass} </h2>
-      </div>
-      <div className='pin' onClick={() => setIsHidden(!isHidden)}></div>
     </div>
   )
 }
