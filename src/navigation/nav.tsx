@@ -13,7 +13,7 @@ const Links = () => {
       </div>
       <ul>
         <li>
-          <Link to='/about'>About</Link>
+          <Link to='/map'>Map</Link>
         </li>
         <li>
           <Link to='/location'>Add Location</Link>

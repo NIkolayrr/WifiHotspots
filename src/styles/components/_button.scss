@@ -1,0 +1,21 @@
+.button {
+  min-width: 100px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  &.primary {
+    background-color: $primary-color;
+    color: $accent;
+  }
+  &.secondary {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+  &.accent {
+    background-color: $accent;
+    color: $primary-color;
+  }
+}
