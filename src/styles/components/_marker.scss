@@ -1,6 +1,6 @@
 .marker-container {
   .info-container {
-    z-index: 20;
+    z-index: 2;
     background-color: $accent;
     color: $primary-color;
     position: absolute;
@@ -11,6 +11,18 @@
     h2 {
       font-size: 1em;
       margin: 10px 0;
+    }
+  }
+  .functions-container {
+    top: -60px;
+    position: absolute;
+    z-index: 2;
+    display: none;
+    button {
+      margin: 0 0 0 5px;
+    }
+    &.show {
+      display: flex;
     }
   }
   .pin {

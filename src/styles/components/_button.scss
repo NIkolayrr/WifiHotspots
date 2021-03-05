@@ -18,4 +18,16 @@
     background-color: $accent;
     color: $primary-color;
   }
+  &.rounded {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    top: 100px;
+    &:first-child {
+      background: red;
+      color: white;
+    }
+  }
 }

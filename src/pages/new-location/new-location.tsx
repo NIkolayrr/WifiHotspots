@@ -7,6 +7,7 @@ import { useHistory } from 'react-router-dom'
 export function NewLocation() {
   const [currentLocation, setCurrentLocation] = useState(undefined) as any
   const [selectedPlace, setSelectedPlace] = useState(undefined) as any
+  const [editEl, setEditEl] = useState('')
   const [markers, setMarkers] = useState(null) as any
   const [name, setName] = useState('')
   const [network, setNetwork] = useState('')
@@ -36,6 +37,7 @@ export function NewLocation() {
       x: e.x,
       y: e.y,
     })
+    setEditEl('')
   }
 
   const handleSubmit = (e: any) => {
@@ -51,6 +53,24 @@ export function NewLocation() {
     itemsRef.push(item).then((data) => {
       alert('added marker')
       history.push('/map')
+    })
+  }
+
+  const onEditMarker = (data: any, id: string) => {
+    setName(data.name)
+    setNetwork(data.network)
+    setPass(data.pass)
+    setSelectedPlace(data.marker)
+    setEditEl(id)
+  }
+
+  const handleEdit = () => {
+    const itemsRef = firebase.database().ref('places')
+    itemsRef.child(editEl).update({
+      name: name,
+      network: network,
+      pass: pass,
+      marker: { ...selectedPlace },
     })
   }
 
@@ -75,7 +95,8 @@ export function NewLocation() {
                     lng={markers[el].marker.lon}
                     data={markers[el]}
                     id={el}
-                    isActive={true}
+                    isActive={false}
+                    onEdit={onEditMarker}
                   />
                 )
               })
@@ -97,8 +118,8 @@ export function NewLocation() {
           <input type='text' value={pass} onChange={(e) => setPass(e.target.value)} />
         </label>
         <div className='button-wrapper'>
-          <button className='button secondary' onClick={(e) => handleSubmit(e)}>
-            submit
+          <button className='button secondary' onClick={(e) => (editEl ? handleEdit() : handleSubmit(e))}>
+            {editEl ? 'save' : 'submit'}
           </button>
           <button className='button primary' onClick={() => setSelectedPlace(null)}>
             clear marker
