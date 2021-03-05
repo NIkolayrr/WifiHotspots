@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/WifiHotspots/static/css/main.bffdffc3.chunk.css",
-    "main.js": "/WifiHotspots/static/js/main.89e87f9c.chunk.js",
-    "main.js.map": "/WifiHotspots/static/js/main.89e87f9c.chunk.js.map",
-    "runtime-main.js": "/WifiHotspots/static/js/runtime-main.f6813075.js",
-    "runtime-main.js.map": "/WifiHotspots/static/js/runtime-main.f6813075.js.map",
-    "static/js/2.bc134a24.chunk.js": "/WifiHotspots/static/js/2.bc134a24.chunk.js",
-    "static/js/2.bc134a24.chunk.js.map": "/WifiHotspots/static/js/2.bc134a24.chunk.js.map",
-    "static/js/3.3a662e3e.chunk.js": "/WifiHotspots/static/js/3.3a662e3e.chunk.js",
-    "static/js/3.3a662e3e.chunk.js.map": "/WifiHotspots/static/js/3.3a662e3e.chunk.js.map",
-    "index.html": "/WifiHotspots/index.html",
-    "static/css/main.bffdffc3.chunk.css.map": "/WifiHotspots/static/css/main.bffdffc3.chunk.css.map",
-    "static/js/2.bc134a24.chunk.js.LICENSE.txt": "/WifiHotspots/static/js/2.bc134a24.chunk.js.LICENSE.txt"
+    "main.css": "/wifihotspots/static/css/main.bffdffc3.chunk.css",
+    "main.js": "/wifihotspots/static/js/main.89e87f9c.chunk.js",
+    "main.js.map": "/wifihotspots/static/js/main.89e87f9c.chunk.js.map",
+    "runtime-main.js": "/wifihotspots/static/js/runtime-main.42ab3d54.js",
+    "runtime-main.js.map": "/wifihotspots/static/js/runtime-main.42ab3d54.js.map",
+    "static/js/2.687c550a.chunk.js": "/wifihotspots/static/js/2.687c550a.chunk.js",
+    "static/js/2.687c550a.chunk.js.map": "/wifihotspots/static/js/2.687c550a.chunk.js.map",
+    "static/js/3.3a662e3e.chunk.js": "/wifihotspots/static/js/3.3a662e3e.chunk.js",
+    "static/js/3.3a662e3e.chunk.js.map": "/wifihotspots/static/js/3.3a662e3e.chunk.js.map",
+    "index.html": "/wifihotspots/index.html",
+    "static/css/main.bffdffc3.chunk.css.map": "/wifihotspots/static/css/main.bffdffc3.chunk.css.map",
+    "static/js/2.687c550a.chunk.js.LICENSE.txt": "/wifihotspots/static/js/2.687c550a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f6813075.js",
-    "static/js/2.bc134a24.chunk.js",
+    "static/js/runtime-main.42ab3d54.js",
+    "static/js/2.687c550a.chunk.js",
     "static/css/main.bffdffc3.chunk.css",
     "static/js/main.89e87f9c.chunk.js"
   ]
