@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "https://nikolayrr/WifiHotspots/static/css/main.a2c12511.chunk.css",
-    "main.js": "https://nikolayrr/WifiHotspots/static/js/main.c50ef97a.chunk.js",
-    "main.js.map": "https://nikolayrr/WifiHotspots/static/js/main.c50ef97a.chunk.js.map",
-    "runtime-main.js": "https://nikolayrr/WifiHotspots/static/js/runtime-main.f64ed3f2.js",
-    "runtime-main.js.map": "https://nikolayrr/WifiHotspots/static/js/runtime-main.f64ed3f2.js.map",
-    "static/js/2.7efcf7e7.chunk.js": "https://nikolayrr/WifiHotspots/static/js/2.7efcf7e7.chunk.js",
-    "static/js/2.7efcf7e7.chunk.js.map": "https://nikolayrr/WifiHotspots/static/js/2.7efcf7e7.chunk.js.map",
-    "static/js/3.95a97628.chunk.js": "https://nikolayrr/WifiHotspots/static/js/3.95a97628.chunk.js",
-    "static/js/3.95a97628.chunk.js.map": "https://nikolayrr/WifiHotspots/static/js/3.95a97628.chunk.js.map",
-    "index.html": "https://nikolayrr/WifiHotspots/index.html",
-    "static/css/main.a2c12511.chunk.css.map": "https://nikolayrr/WifiHotspots/static/css/main.a2c12511.chunk.css.map",
-    "static/js/2.7efcf7e7.chunk.js.LICENSE.txt": "https://nikolayrr/WifiHotspots/static/js/2.7efcf7e7.chunk.js.LICENSE.txt"
+    "main.css": "https://nikolayrr/wifihotspots/static/css/main.a2c12511.chunk.css",
+    "main.js": "https://nikolayrr/wifihotspots/static/js/main.c36d43f2.chunk.js",
+    "main.js.map": "https://nikolayrr/wifihotspots/static/js/main.c36d43f2.chunk.js.map",
+    "runtime-main.js": "https://nikolayrr/wifihotspots/static/js/runtime-main.e44653a6.js",
+    "runtime-main.js.map": "https://nikolayrr/wifihotspots/static/js/runtime-main.e44653a6.js.map",
+    "static/js/2.94978555.chunk.js": "https://nikolayrr/wifihotspots/static/js/2.94978555.chunk.js",
+    "static/js/2.94978555.chunk.js.map": "https://nikolayrr/wifihotspots/static/js/2.94978555.chunk.js.map",
+    "static/js/3.95a97628.chunk.js": "https://nikolayrr/wifihotspots/static/js/3.95a97628.chunk.js",
+    "static/js/3.95a97628.chunk.js.map": "https://nikolayrr/wifihotspots/static/js/3.95a97628.chunk.js.map",
+    "index.html": "https://nikolayrr/wifihotspots/index.html",
+    "static/css/main.a2c12511.chunk.css.map": "https://nikolayrr/wifihotspots/static/css/main.a2c12511.chunk.css.map",
+    "static/js/2.94978555.chunk.js.LICENSE.txt": "https://nikolayrr/wifihotspots/static/js/2.94978555.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f64ed3f2.js",
-    "static/js/2.7efcf7e7.chunk.js",
+    "static/js/runtime-main.e44653a6.js",
+    "static/js/2.94978555.chunk.js",
     "static/css/main.a2c12511.chunk.css",
-    "static/js/main.c50ef97a.chunk.js"
+    "static/js/main.c36d43f2.chunk.js"
   ]
 }
