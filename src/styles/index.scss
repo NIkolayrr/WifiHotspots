@@ -3,3 +3,10 @@
 
 @import './components/index.scss';
 @import './pages/index.scss';
+
+.gm-style-iw .gm-style-iw-c {
+  display: none;
+}
+.gm-style .gm-style-iw-t::after {
+  display: none;
+}
