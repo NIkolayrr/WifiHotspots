@@ -44,7 +44,7 @@ const Routes = () => {
 
 export function Nav() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.REACT_APP_PUBLIC_URL}>
       <Links />
       <Routes />
     </Router>

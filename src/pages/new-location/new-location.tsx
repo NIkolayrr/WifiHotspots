@@ -7,12 +7,20 @@ import { useHistory } from 'react-router-dom'
 export function NewLocation() {
   const [currentLocation, setCurrentLocation] = useState(undefined) as any
   const [selectedPlace, setSelectedPlace] = useState(undefined) as any
-  const [editEl, setEditEl] = useState('')
   const [markers, setMarkers] = useState(null) as any
-  const [name, setName] = useState('')
-  const [network, setNetwork] = useState('')
-  const [pass, setPass] = useState('')
   const history = useHistory()
+  const [formData, setFormData] = useState({
+    name: '',
+    network: '',
+    pass: '',
+    id: '',
+    marker: {
+      lat: '',
+      lon: '',
+      x: '',
+      y: '',
+    },
+  })
 
   const mapsKey = process.env.REACT_APP_GOOGLE_API_KEY as string
   useEffect(() => {
@@ -37,41 +45,37 @@ export function NewLocation() {
       x: e.x,
       y: e.y,
     })
-    setEditEl('')
+    setFormData({ ...formData, marker: { lat: e.lat, lon: e.lng, x: e.x, y: e.y } })
   }
 
   const handleSubmit = (e: any) => {
     e.preventDefault()
-    if (!name || !network || !pass) return
     const itemsRef = firebase.database().ref('places')
-    const item = {
-      name: name,
-      network: network,
-      pass: pass,
-      marker: { ...selectedPlace },
-    }
-    itemsRef.push(item).then((data) => {
+    itemsRef.push(formData).then((data) => {
       alert('added marker')
       history.push('/map')
     })
   }
 
   const onEditMarker = (data: any, id: string) => {
-    setName(data.name)
-    setNetwork(data.network)
-    setPass(data.pass)
-    setSelectedPlace(data.marker)
-    setEditEl(id)
+    setFormData({
+      ...formData,
+      name: data.name,
+      network: data.network,
+      pass: data.pass,
+      id: id,
+      marker: { ...data.marker },
+    })
   }
 
   const handleEdit = () => {
     const itemsRef = firebase.database().ref('places')
-    itemsRef.child(editEl).update({
-      name: name,
-      network: network,
-      pass: pass,
-      marker: { ...selectedPlace },
-    })
+    itemsRef.child(formData.id).update(formData)
+  }
+
+  const handleChange = (event: any) => {
+    const target = event.target
+    setFormData({ ...formData, [target.name]: target.value })
   }
 
   return currentLocation ? (
@@ -107,21 +111,27 @@ export function NewLocation() {
       <form className='form'>
         <label>
           <div>Name</div>
-          <input type='text' value={name} onChange={(e) => setName(e.target.value)} />
+          <input type='text' name='name' value={formData.name} onChange={handleChange} />
         </label>
         <label>
           <div>WiFi Network</div>
-          <input type='text' value={network} onChange={(e) => setNetwork(e.target.value)} />
+          <input type='text' name='network' value={formData.network} onChange={handleChange} />
         </label>
         <label>
           <div>WiFi Password</div>
-          <input type='text' value={pass} onChange={(e) => setPass(e.target.value)} />
+          <input type='text' name='pass' value={formData.pass} onChange={handleChange} />
         </label>
         <div className='button-wrapper'>
-          <button className='button secondary' onClick={(e) => (editEl ? handleEdit() : handleSubmit(e))}>
-            {editEl ? 'save' : 'submit'}
+          <button className='button secondary' onClick={(e) => (formData.id ? handleEdit() : handleSubmit(e))}>
+            {formData.id ? 'save' : 'submit'}
           </button>
-          <button className='button primary' onClick={() => setSelectedPlace(null)}>
+          <button
+            className='button primary'
+            onClick={(e) => {
+              e.preventDefault()
+              setSelectedPlace(null)
+            }}
+          >
             clear marker
           </button>
         </div>

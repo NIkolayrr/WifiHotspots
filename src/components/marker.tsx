@@ -18,6 +18,7 @@ export const Marker = (props: any) => {
   }
 
   const editMarker = (e: any) => {
+    e.preventDefault()
     props.onEdit(props.data, props.id)
   }
 
