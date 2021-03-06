@@ -3,6 +3,7 @@ import GoogleMapReact from 'google-map-react'
 import firebase from '../../core-data/firebase'
 import { Marker } from '../../components/marker'
 import { useHistory } from 'react-router-dom'
+import { ReactComponent as LoaderSvg } from '../../assets/loader.svg'
 
 export function NewLocation() {
   const [currentLocation, setCurrentLocation] = useState(undefined) as any
@@ -45,7 +46,7 @@ export function NewLocation() {
       x: e.x,
       y: e.y,
     })
-    setFormData({ ...formData, marker: { lat: e.lat, lon: e.lng, x: e.x, y: e.y } })
+    setFormData({ name: '', network: '', pass: '', id: '', marker: { lat: e.lat, lon: e.lng, x: e.x, y: e.y } })
   }
 
   const handleSubmit = (e: any) => {
@@ -138,6 +139,8 @@ export function NewLocation() {
       </form>
     </div>
   ) : (
-    <h1>Loading...</h1>
+    <div className='loader loader--style6' title='5'>
+      <LoaderSvg />
+    </div>
   )
 }
