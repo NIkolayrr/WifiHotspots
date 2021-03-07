@@ -88,7 +88,7 @@ export function NewLocation() {
             lat: currentLocation.lat,
             lng: currentLocation.lon,
           }}
-          onClick={(e) => clickMap(e)}
+          onClick={clickMap}
           defaultZoom={15}
         >
           {markers

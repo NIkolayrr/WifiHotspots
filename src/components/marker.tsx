@@ -18,7 +18,6 @@ export const Marker = (props: any) => {
   }
 
   const editMarker = (e: any) => {
-    e.preventDefault()
     props.onEdit(props.data, props.id)
   }
 
@@ -40,10 +39,7 @@ export const Marker = (props: any) => {
           </button>
         </div>
       )}
-      <div
-        className={`pin ${hasData ? null : 'not-active'}`}
-        onClick={() => (hasData ? setIsHidden(!isHidden) : null)}
-      ></div>
+      <div className={`pin ${hasData ? null : 'not-active'}`} onClick={() => setIsHidden(!isHidden)}></div>
     </div>
   )
 }
