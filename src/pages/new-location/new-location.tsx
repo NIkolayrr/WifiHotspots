@@ -21,16 +21,23 @@ export function NewLocation() {
       x: '',
       y: '',
     },
+    votes: '',
   })
 
   const mapsKey = process.env.REACT_APP_GOOGLE_API_KEY as string
   useEffect(() => {
-    navigator.geolocation.getCurrentPosition((position: any) => {
-      const { latitude, longitude } = position.coords
-      setCurrentLocation({
-        lat: latitude,
-        lon: longitude,
-      })
+    // navigator.geolocation.getCurrentPosition((position: any) => {
+    //   console.log('the position', position)
+    //   const { latitude, longitude } = position.coords
+    //   setCurrentLocation({
+    //     lat: latitude,
+    //     lon: longitude,
+    //   })
+    // })
+
+    setCurrentLocation({
+      lat: 42.69751,
+      lon: 23.32415,
     })
 
     const itemsRef = firebase.database().ref('places')
@@ -46,7 +53,14 @@ export function NewLocation() {
       x: e.x,
       y: e.y,
     })
-    setFormData({ name: '', network: '', pass: '', id: '', marker: { lat: e.lat, lon: e.lng, x: e.x, y: e.y } })
+    setFormData({
+      name: '',
+      network: '',
+      pass: '',
+      id: '',
+      marker: { lat: e.lat, lon: e.lng, x: e.x, y: e.y },
+      votes: '',
+    })
   }
 
   const handleSubmit = (e: any) => {
@@ -89,7 +103,7 @@ export function NewLocation() {
             lng: currentLocation.lon,
           }}
           onClick={clickMap}
-          defaultZoom={15}
+          defaultZoom={10}
         >
           {markers
             ? Object.keys(markers).map((el: any, index: number) => {

@@ -16,7 +16,7 @@ export function Map() {
       lat: 42.28389,
       lng: 22.69111,
     },
-    zoom: 14,
+    zoom: 9,
   }
 
   const mapsKey = process.env.REACT_APP_GOOGLE_API_KEY as string

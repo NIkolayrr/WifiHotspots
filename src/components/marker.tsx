@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChair, faPen, faTrash, faUser } from '@fortawesome/free-solid-svg-icons'
-import React, { useState } from 'react'
+import { faChair, faPen, faThumbsDown, faThumbsUp, faTrash, faUser } from '@fortawesome/free-solid-svg-icons'
+import React, { useEffect, useState } from 'react'
 import firebase from '../core-data/firebase'
 
 export const Marker = (props: any) => {
@@ -8,6 +8,7 @@ export const Marker = (props: any) => {
   const hasData = props.data
 
   const deleteMarker = (e: any) => {
+    if (!props.id) return
     const itemsRef = firebase.database().ref('places')
     itemsRef
       .child(props.id)
@@ -18,7 +19,20 @@ export const Marker = (props: any) => {
   }
 
   const editMarker = (e: any) => {
+    if (!props.id) return
     props.onEdit(props.data, props.id)
+  }
+
+  const Votes = () => {
+    const voteUp = () => {}
+    const voteDown = () => {}
+    return (
+      <div className='votes-wrapper'>
+        <div>Votes: 0</div>
+        <FontAwesomeIcon className='icon' icon={faThumbsUp} onClick={voteUp} />
+        <FontAwesomeIcon className='icon' icon={faThumbsDown} onClick={voteDown} />
+      </div>
+    )
   }
 
   return (
@@ -28,6 +42,7 @@ export const Marker = (props: any) => {
           <h2>Name: {props.data.name} </h2>
           <h2>Network: {props.data.network} </h2>
           <h2>Password: {props.data.pass} </h2>
+          <Votes />
         </div>
       ) : (
         <div className={`functions-container ${isHidden ? null : 'show'}`}>
