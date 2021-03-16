@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/WifiHotspots/static/css/main.eeb7ed92.chunk.css",
-    "main.js": "/WifiHotspots/static/js/main.431d07a3.chunk.js",
-    "main.js.map": "/WifiHotspots/static/js/main.431d07a3.chunk.js.map",
+    "main.css": "/WifiHotspots/static/css/main.facb9305.chunk.css",
+    "main.js": "/WifiHotspots/static/js/main.73a4ff91.chunk.js",
+    "main.js.map": "/WifiHotspots/static/js/main.73a4ff91.chunk.js.map",
     "runtime-main.js": "/WifiHotspots/static/js/runtime-main.4937e273.js",
     "runtime-main.js.map": "/WifiHotspots/static/js/runtime-main.4937e273.js.map",
-    "static/js/2.bb23e1ca.chunk.js": "/WifiHotspots/static/js/2.bb23e1ca.chunk.js",
-    "static/js/2.bb23e1ca.chunk.js.map": "/WifiHotspots/static/js/2.bb23e1ca.chunk.js.map",
+    "static/js/2.6d9c10ce.chunk.js": "/WifiHotspots/static/js/2.6d9c10ce.chunk.js",
+    "static/js/2.6d9c10ce.chunk.js.map": "/WifiHotspots/static/js/2.6d9c10ce.chunk.js.map",
     "static/js/3.50b678d4.chunk.js": "/WifiHotspots/static/js/3.50b678d4.chunk.js",
     "static/js/3.50b678d4.chunk.js.map": "/WifiHotspots/static/js/3.50b678d4.chunk.js.map",
     "index.html": "/WifiHotspots/index.html",
-    "static/css/main.eeb7ed92.chunk.css.map": "/WifiHotspots/static/css/main.eeb7ed92.chunk.css.map",
-    "static/js/2.bb23e1ca.chunk.js.LICENSE.txt": "/WifiHotspots/static/js/2.bb23e1ca.chunk.js.LICENSE.txt",
+    "static/css/main.facb9305.chunk.css.map": "/WifiHotspots/static/css/main.facb9305.chunk.css.map",
+    "static/js/2.6d9c10ce.chunk.js.LICENSE.txt": "/WifiHotspots/static/js/2.6d9c10ce.chunk.js.LICENSE.txt",
     "static/media/loader.23899a44.svg": "/WifiHotspots/static/media/loader.23899a44.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.4937e273.js",
-    "static/js/2.bb23e1ca.chunk.js",
-    "static/css/main.eeb7ed92.chunk.css",
-    "static/js/main.431d07a3.chunk.js"
+    "static/js/2.6d9c10ce.chunk.js",
+    "static/css/main.facb9305.chunk.css",
+    "static/js/main.73a4ff91.chunk.js"
   ]
 }
