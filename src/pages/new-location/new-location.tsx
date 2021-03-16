@@ -21,7 +21,7 @@ export function NewLocation() {
       x: '',
       y: '',
     },
-    votes: '',
+    votes: 0,
   })
 
   const mapsKey = process.env.REACT_APP_GOOGLE_API_KEY as string
@@ -59,7 +59,7 @@ export function NewLocation() {
       pass: '',
       id: '',
       marker: { lat: e.lat, lon: e.lng, x: e.x, y: e.y },
-      votes: '',
+      votes: 0,
     })
   }
 

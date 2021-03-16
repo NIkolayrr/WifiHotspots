@@ -14,6 +14,15 @@
     }
     z-index: 99;
   }
+  .close-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
   .functions-container {
     top: -60px;
     left: -25px;
@@ -66,9 +75,17 @@
   }
   .votes-wrapper {
     display: flex;
+    align-items: center;
+    h4 {
+      margin-right: 5px;
+    }
     .icon {
+      font-size: 1.2em;
       cursor: pointer;
-      margin: 0 5px;
+      margin: 0 2px;
+      &:hover {
+        color: $secondary-color;
+      }
     }
   }
 }
