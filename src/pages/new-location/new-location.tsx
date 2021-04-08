@@ -124,6 +124,12 @@ export function NewLocation() {
         </GoogleMapReact>
       </div>
       <form className='form'>
+        {selectedPlace ? (
+          <p>
+            lat: <span className='coordinate'>{selectedPlace.lat}</span> lon:{' '}
+            <span className='coordinate'>{selectedPlace.lon}</span>
+          </p>
+        ) : null}
         <label>
           <div>Name</div>
           <input type='text' name='name' value={formData.name} onChange={handleChange} />
